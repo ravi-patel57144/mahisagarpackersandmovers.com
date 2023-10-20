@@ -25,3 +25,8 @@ urlpatterns = [
     path('', include('home.urls')),
     path('cities/', include('dynamic.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = "Mahisagar Packers and Movers Admin"
+admin.site.site_title = "Mahisagar Packers and Movers Admin Portal"
+admin.site.index_title = "Welcome to Mahisagar Packers and Movers Portal"

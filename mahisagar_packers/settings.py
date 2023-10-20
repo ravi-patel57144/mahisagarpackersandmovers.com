@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,3 +133,21 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# JAZZMIN SETTINGS
+#
+JAZZMIN_SETTINGS = {
+    "site_logo": "/img/mahisagar_logo2.png",
+    "welcome_sign": "Welcome to the Mahisagar Packers and Movers",
+    "copyright": "MAHISAGAR PACKERS AND MOVERS",
+
+}
+# JAZZMIN_SETTINGS["show_ui_builder"] = True
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": True,
+    "footer_small_text": True,
+    "body_small_text": True,
+    "brand_small_text": True,
+}

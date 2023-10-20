@@ -9,19 +9,26 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-8">
-                <h1>{{ city_pages.title }}</h1>
+                <h1>{{ city_pages.title }}</h1><br>
                 <p style="text-align: justify">{{ city_pages.description }}</p>
+                <p style="text-align: justify">{{ city_pages.description1 }}</p>
+                <p style="text-align: justify">{{ city_pages.description2 }}</p>
             </div>
             <div class="col-lg-4">
                 <div class="img-container">
-                    <img src="{{ city_pages.image.url }}" alt="packers and movers {{ city_pages.city }}" class="img-fluid">
+                    {% if city_pages.image %}
+                        <img src="{{ city_pages.image.url }}" alt="packers and movers {{ city_pages.city }}" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+                    {% else %}
+                        <img src="{% static 'img/pagedef.jpg' %}" alt="packers and movers {{ city_pages.city }}" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
     <style>
-        .img-container {
-            margin-top: 60px; /* Adjust the margin to create the desired spacing */
+        .img-fluid {
+            max-width: 100%; /* Make sure the image doesn't exceed its container width */
+            height: auto; /* Maintain the image's aspect ratio */
         }
     </style>
 {% endblock %}

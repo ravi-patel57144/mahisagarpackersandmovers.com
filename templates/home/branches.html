@@ -11,7 +11,7 @@
             <h1 class="display-3 text-white mb-3 animated slideInDown">Branches</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Branches</li>
                 </ol>
             </nav>
@@ -25,8 +25,8 @@
             <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title" style="color: #6a1a21">{{ branch.name }}</h5>
-                        <p class="card-text"><strong>{{ branch.category }}</strong>: {{ branch.address }}</p>
+                        <h6 class="card-title" style="color: #6a1a21">{{ branch.name }}</h6>
+                        <p class="card-text" style="text-align: justify"><strong>{{ branch.category }}</strong>: {{ branch.address }}</p>
                         <p class="card-text"><strong> <i class="fa fa-phone"></i> </strong><a href="tel:+91{{ branch.mobile }}" style="text-decoration: none; color: black">{{ branch.mobile }}</a></p>
                         <p class="card-text">
                             <strong><i class="fa fa-envelope"></i></strong>
