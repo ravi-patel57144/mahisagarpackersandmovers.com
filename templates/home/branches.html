@@ -1,0 +1,42 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block extra_head %}
+    <title>Mahisagar Packers and Movers | About Mahisagar Packers and Movers</title>
+{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Branches</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Branches</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<div class="container-fluid">
+    <div class="row">
+        {% for branch in branches %}
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="color: #6a1a21">{{ branch.name }}</h5>
+                        <p class="card-text"><strong>{{ branch.category }}</strong>: {{ branch.address }}</p>
+                        <p class="card-text"><strong> <i class="fa fa-phone"></i> </strong><a href="tel:+91{{ branch.mobile }}" style="text-decoration: none; color: black">{{ branch.mobile }}</a></p>
+                        <p class="card-text">
+                            <strong><i class="fa fa-envelope"></i></strong>
+                            <a href="mailto:{{ branch.email }}?subject=Inquiry%20on%20Mahisagar%20Packers%20and%20Movers&body=Hello%2C%0A%0AI%20have%20an%20inquiry%20regarding%20your%20services.%20Please%20provide%20more%20information.%0A%0AThank%20you."
+                               style="text-decoration: none; color: black">{{ branch.email }}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

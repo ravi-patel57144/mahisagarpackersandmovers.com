@@ -1,0 +1,92 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block extra_head %}
+
+    <title>Mahisagar Packers and Movers | Services</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-1.jpg' %}" alt="Loading and unloading service by Packers and Movers">
+                        </div>
+                        <h4 class="mb-3">Loading & Unloading</h4>
+                        <p style="text-align: justify;">Mahisagar Packers and Movers takes care of the heavy lifting with our top-notch loading and unloading services. Whether it's a local or long-distance move, our experienced team ensures the safe handling of your belongings. We use advanced equipment and techniques to make your move stress-free and efficient. Trust us for a hassle-free relocation experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-2.jpg' %}" alt="Packing and moving service">
+                        </div>
+                        <h4 class="mb-3">Packing & Moving</h4>
+                        <p style="text-align: justify;">When it comes to packing and moving, trust Mahisagar Packers and Movers as your partner. Our skilled professionals use high-quality packing materials to secure your belongings. We handle everything, from treasured possessions to delicate items, ensuring they arrive at your new location intact. We're committed to making your move seamless, allowing you to focus on settling into your new space.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-3.jpg' %}" alt="Household relocation service">
+                        </div>
+                        <h4 class="mb-3">Household Relocations</h4>
+                        <p style="text-align: justify;">Moving your entire household is a significant life event. Mahisagar Packers and Movers understands the importance of this transition. Our household relocation services are tailored to your unique needs. From detailed planning to professional packing and secure transportation, we've got you covered. Trust us to move your memories and cherished possessions safely to your new home.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-4.jpg' %}" alt="Office relocation service">
+                        </div>
+                        <h4 class="mb-3">Office Relocation</h4>
+                        <p style="text-align: justify;">Relocating your office can be a complex and time-sensitive process. Mahisagar Packers and Movers specializes in office relocation to minimize disruption to your business operations. We handle the packing, transportation, and setup of your office equipment and supplies. Count on us for a smooth transition that allows you to get back to work swiftly.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-5.jpg' %}" alt="Automobile relocation service">
+                        </div>
+                        <h4 class="mb-3">Automobile Relocation</h4>
+                        <p style="text-align: justify;">Moving your precious vehicles requires specialized care. Mahisagar Packers and Movers offers automobile relocation services that ensure your cars and bikes reach your new destination in pristine condition. We use secure transportation methods and protective measures to safeguard your vehicles during the journey. Your automobiles are in safe hands with us.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="{% static 'img/service-6.jpg' %}" alt="Storage and warehousing service">
+                        </div>
+                        <h4 class="mb-3">Storage & Warehousing</h4>
+                        <p style="text-align: justify;">Sometimes, your new destination may not be ready for immediate occupancy. Mahisagar Packers and Movers provides secure storage and warehousing solutions for your belongings. Our facilities are equipped to store your items safely until you're ready to move in. With us, you can experience the convenience of flexible storage options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+{% endblock %}

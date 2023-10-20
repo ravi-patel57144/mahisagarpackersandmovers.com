@@ -1,0 +1,133 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block extra_head %}
+    <title>Mahisagar Packers and Movers | Contact Us</title>
+
+{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+{#    <!-- Contact Start -->#}
+{#    <div class="container-fluid overflow-hidden py-5 px-lg-0">#}
+{#        <div class="container contact-page py-5 px-lg-0">#}
+{#            <div class="row g-5 mx-lg-0">#}
+{#                <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">#}
+{#                    <h6 class="text-secondary text-uppercase">Get In Touch</h6>#}
+{#                    <h1 class="mb-4">Contact For Any Query</h1>#}
+{#                    <p class="mb-4">Contact us with any questions or inquiries you may have. We're here to help you. You can use the form below to send us a message.</p>#}
+{#                    <div class="bg-light p-4">#}
+{#                        <form id="contact-form" method="post" action="{% url 'contact' %}">#}
+{#                            {% csrf_token %}#}
+{#                            <div class="row g-3">#}
+{#                                <div class="col-md-6">#}
+{#                                    <div class="form-floating">#}
+{#                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">#}
+{#                                        <label for="name">Your Name</label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-md-6">#}
+{#                                    <div class="form-floating">#}
+{#                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">#}
+{#                                        <label for="email">Your Email</label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-12">#}
+{#                                    <div class="form-floating">#}
+{#                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">#}
+{#                                        <label for="subject">Subject</label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-12">#}
+{#                                    <div class="form-floating">#}
+{#                                        <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>#}
+{#                                        <label for="message">Message</label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-12">#}
+{#                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">#}
+{#                    <div class="position-relative h-100">#}
+{#                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"#}
+{#                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229.56541685601852!2d72.49331657858447!3d22.985311261804192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697114698898!5m2!1sen!2sin"#}
+{#                                frameborder="0" allowfullscreen="" aria-hidden="false"#}
+{#                                tabindex="0"></iframe>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <!-- Contact End -->#}
+
+        <!-- Quote Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s" id="quote">
+                    <h6 class="text-secondary text-uppercase mb-3">Get A Quote</h6>
+                    <h1 class="mb-5">Request A Free Qoute!</h1>
+                    <p class="mb-5">When you choose Mahisagar Packers and Movers, you're choosing a team dedicated to making your move as smooth as possible. With our commitment to excellence and experienced professionals, we take the stress out of relocating. Request a free quote today and experience the difference.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-phone fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                        <div class="ps-4">
+                            <h6>Call for any query!</h6>
+                            <h3 class="text-primary m-0"><a href="tel:+919725306886">+91 9725306886</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                        <form method="post" action="{% url 'quotation' %}">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="mobile" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="date" name="date" class="form-control border-0" placeholder="Shifting Date" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="s_from" class="form-control border-0" placeholder="Shifting From" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="s_to" class="form-control border-0" placeholder="Shifting To" style="height: 55px;">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control border-0" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block extra_head %}
+    <title>Mahisagar Packers and Movers | {{ city_pages.city }}</title>
+    <meta name="keywords" content="Mahisagar Packers and Movers, Packers and Movers in {{ city_pages.city }}, {{ city_pages.city }} Moving Services, Relocation Services in {{ city_pages.city }}, Local Packers and Movers, Best Packers and Movers in {{ city_pages.city }}, {{ city_pages.city }} Movers, Residential Moving in {{ city_pages.city }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>{{ city_pages.title }}</h1>
+                <p style="text-align: justify">{{ city_pages.description }}</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="img-container">
+                    <img src="{{ city_pages.image.url }}" alt="packers and movers {{ city_pages.city }}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .img-container {
+            margin-top: 60px; /* Adjust the margin to create the desired spacing */
+        }
+    </style>
+{% endblock %}
