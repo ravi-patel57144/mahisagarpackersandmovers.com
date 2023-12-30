@@ -72,8 +72,7 @@
 
 /*** Navbar ***/
 .navbar-brand .logo-img {
-    mix-blend-mode: multiply; /* Make the logo blend with the background */
-    max-height: 200px; /* Fix the logo's size in the navbar */
+    max-height: 110px; /* Fix the logo's size in the navbar */
 }
 
 .navbar .dropdown-toggle::after {
