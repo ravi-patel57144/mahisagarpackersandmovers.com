@@ -24,4 +24,5 @@
 ![image](https://github.com/ravi-patel57144/mahisagarpackersandmovers.com/assets/111125824/9949d62b-01a8-41b2-a746-5c0795772ca1)
 
 # Branch add view on admin panel
-![Uploading image.png…]()
+![image](https://github.com/ravi-patel57144/mahisagarpackersandmovers.com/assets/111125824/44b348e4-d8c7-4578-85b5-33e68233a00d)
+
